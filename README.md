@@ -23,3 +23,7 @@ dfTest2.head(4)
 tables = [dfTest1, dfTest2]
 data = pd.concat(tables)
 data.shape
+
+# Vytvorim novy index ve nove tabulce feedbacku ke kurzum
+data = data.reset_index()
+data
